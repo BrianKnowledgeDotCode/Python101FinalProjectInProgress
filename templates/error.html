@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- this is the html code that is a template to give the user a error message if necessary. -->
+                <!-- This html template will get rendered/called from the API --->
+
+<html>
+
+ <head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+      <title>repli.it</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+
+   <style>
+    body {
+        background-image: url('https://i.pinimg.com/originals/df/36/d0/df36d00cf19f0d5e38e7bf8a43c64793.gif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+ </head>
+  <body>
+
+  <h1 style="color: red;">Uh-OH, looks like we encountered an issue with your request</h1>
+
+    {{result.error_message}}
+
+  </body>
+
+</html>

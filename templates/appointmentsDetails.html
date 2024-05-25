@@ -1,0 +1,62 @@
+<!-- This html template will get rendered/called from the API --->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+
+      h1{
+        font-size:1.1em;
+      }
+      body{
+        width:50%;
+        margin:auto;
+      }
+
+      body {
+        background-image: url('https://img.freepik.com/free-vector/vintage-barber-logo-design-retro-icons-man-hair-beard-classic-barbershop-branding_665222-38.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+      </style>
+  </head>
+  <body>
+
+
+   <h2 style="color: white;">Your Appointment Details</h2>
+    <h1 style="color: white;">
+      Estimated Day of Appointment
+    </h1>
+    <p style="color: red;">
+     {{selected_day}}
+    </p>
+    <h1 style="color: white;">
+      Estimated Time of Appointment
+    </h1>
+    <p style="color: red;">
+     {{selected_time}}
+    </p>
+
+    <h1 style="color: white;">
+      Estimated Cost of Appointment
+    </h1>
+    <p style="color: red;">
+     {{result}}
+    </p>
+    <h1 style="color: white;">
+     Barber Name
+    </h1>
+    <p style="color: red;">
+     {{selected_barber}}
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

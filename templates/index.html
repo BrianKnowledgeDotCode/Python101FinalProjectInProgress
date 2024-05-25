@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+     <style>
+      p{
+        display:none;
+      }
+      h1{
+        font-size:1.1em;
+      }
+      body{
+        width:50%;
+        margin:auto;
+      }
+      label{
+        font-size:1.8em;
+        padding-top:15px
+      }
+      .form-group{
+        margin-bottom:20px;
+      }
+
+  body {
+        background-image: url('https://isthmus.com/downloads/40675/download/emphasis-Atwood-barbers-crPauliusMusteikis-09082016.jpg?cb=ec56784428c2d039537fc532a190178f&w=1200');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+      </style>
+  </head>
+
+  <body>
+
+   <form class="form-horizontal" action="http://localhost:5000/calculate_price" method="POST">
+<fieldset>
+
+<!-- Form Name -->
+<legend style="color: white;">Fresh Cuts Please Schedule Your Appointment</legend>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="day" style="color: white;">Best Day for Appointment</label>
+  <div class="col-md-4">
+    <select id="day" name="day" class="form-control">
+      <option value="Sunday">Sunday</option>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appointment" style="color: white;">Best Time for Appointment</label>
+  <div class="col-md-4">
+    <select id="appointment" name="appointment" class="form-control">
+      <option value="8:30 am">8:30 am</option>
+      <option value="9:00 am">9:00 am</option>
+      <option value="10:00 am">10:00 am</option>
+      <option value="11:00 am">11:00 am</option>
+      <option value="12:00 am">12:00 pm</option>
+      <option value="1:00 pm">1:00 pm</option>
+      <option value="2:00 pm">2:00 pm</option>
+      <option value="3:00 pm">3:00 pm</option>
+      <option value="4:00 pm">4:00 pm</option>
+     <!-- <option value="17">5:00 pm</option> -->
+    </select>
+  </div>
+</div>
+
+  <div class="form-group">
+  <label class="col-md-4 control-label" for="barbername" style="color: white;">Choose Your Barber</label>
+  <div class="col-md-4">
+    <select id="barbername" name="barber" class="form-control">
+      <option value="Terry">Terry</option>
+      <option value="Irvine">Irvine</option>
+      <option value="Brian">Brian</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput" id="servicehtml" style="color: white;">Which Style Would You Like?</label>
+  <div class="col-md-4">
+  <input id="textinput" name="cutStyle" type="text" placeholder="type a service" class="form-control input-md">
+  <br>
+  <span class="help-block" style="color: white;">(options: Buzz Cut, Crew Cut, Fade, Bald Cut, or Mohawk)</span>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+  </body>
+</html>
